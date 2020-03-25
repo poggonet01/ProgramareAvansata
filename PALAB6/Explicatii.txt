@@ -1,0 +1,23 @@
+ - Main-ul consta din initializarea si pozitionarea(Sus,jos,centru) in fereastra a celor 3(ConfigPanel,ControlPanel,DrawingPanel) clase care vor 
+	participa la construirea 3 parti separate a "frame-ului" principal . 
+ - Clasa ConfigPanel , metodata init() fiind una mai importanta ce consta in configurarea unor proprietati
+	ce tin de figura care va fi desenata. Propritetatile sunt : Numarul de parti a figurii (1:100) 
+	pregum si un obiect de tipul JComboBox , cu 2 proprietati in lista de scroll (culoarea neagra 
+	sau una aleasa random) . Am mai creat un buton pt ca atunci cand se fac anumite schimbari in 
+	acele doua campuri sa se produca actiunile(metoda Change) la urmatoare desenare a figurilor.
+ - In clasa DrawingPanel , sunt mai multe metode . Cele mai importante sunt : 
+	- createOffscreenImage () care initializeaza o pagina(fundal) de culoare alba in care vor fi
+	plasate ulterior figurile. 
+	- init () care trateaza cazul in care facem click cu mouse-ul pe fereastra .
+	- drawShape() ofera o marime (random figurilor) , verifica ce camp este setat in cele doua 
+	obiecte din clasa ConfigPanel , si in functie de ele , figura preia o culoare anume si un numar 
+	de muchii.
+	-Este tratat cazul in care vrem sa incarcam o poza prin butonul load(din clasa ControlPanel) plus
+	sunt suprascrise si metodele din clasa JComponent , pt a desena imagini la momentul potrivit.
+ - In Clasa ControlPanel , am creat cele patru butoane de (load,save,exit,reset) fiecare cu handler-ul 
+	propriu de tratare a cazului. Metoda Save , salveaza imaginea intr-un fisier dat prin argument ,
+	load incarca o imagine la fel path-ul caruia este dat prin argument.Exit iese din fereastra ,
+	reset folosind metodata update din DrawingPanel , reseteaza imaginea .
+ - Clasa RegularPolygon , creeaza un un poligon . 
+
+	
