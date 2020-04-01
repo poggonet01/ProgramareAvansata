@@ -1,0 +1,27 @@
+In aceasta parte optionala am implementat salvarea,incarcarea imaginii printr-un filechooser .
+Am facut posibila desenarea a mai multor figuri precum "Polygon" si "Cerc" care la randul lor 
+fiind desenate , toate sunt salvate intr-o lista cu tipul de date "Shapes" , interfata 
+implementata de cele doua clase figuri.
+
+
+- Main-ul consta din initializarea si pozitionarea(Sus,jos,centru) in fereastra a celor 3(ConfigPanel,ControlPanel,DrawingPanel) clase care vor 
+	participa la construirea 3 parti separate a "frame-ului" principal . 
+- Clasa ConfigPanel , metodata init() fiind una mai importanta ce consta in configurarea unor proprietati
+	ce tin de figurile ce vor fi desenate.Am adaugat in plus fata de codul precedent , 
+	campurile "File" "Load File" "Save File" , ca prin intermediul unui filechooser imaginea
+	sa poata fi salvata sau adusa printr-0 metoda manuala (deschiderea ferestrei "filechooser");
+	Am implementat doua figuri , polygon si sfera , si pt asta am adaugat un dropdown aici 
+	pt a alege figura ce va fi desenata . 
+	Mai este si campul makechanching pt ca atunci cand dai click pe el , in functie de ce 
+	este selectat in dropdown , sa sa modifice fereastra de configurare . Pt sfera va ramane
+	doar dimensiunea , iar pt polygon respectiv va aparea si un dropdown pt numarul de parti.
+	Asta se fac prin intermediul unui actionEvent , in metoda "Changing".
+-In Clasa ControlPanel , am creat cele patru butoane de (load,save,exit,reset) fiecare cu handler-ul 
+	propriu de tratare a cazului. Metoda Save , salveaza imaginea intr-un fisier dat prin argument ,
+	load incarca o imagine la fel path-ul caruia este dat prin argument.Exit iese din fereastra ,
+	reset folosind metodata update din DrawingPanel , reseteaza imaginea .
+- In Clasa DrawingPanel am adaugat o lista care salveaza figura desenanta intr-o lista , de tipul
+	"Shapes" , interfata implementata de clasele "Polygon" si "Sfera" pt a fi generalizate 
+	si adaugate ambele in aceasta lista. In plus am mai adaugat metodele "SaveFile" si 
+	"Load File" , care incarca sau salveaza imaginile printr-un filechooser . Incarcarea
+	fisierilor am pus-o intr-un bloc try-catch , pt a a vedea eventualele erori ce pot aparea.
