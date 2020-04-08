@@ -1,0 +1,13 @@
+Am folosit baza de date Oracle sql , pentru a creea acele doua table de artisti si albumi.
+Nu am creat baza de date cu numele , parole si user-ul specificat si am folosit baza de date 
+de la BD , cu user-ul si parola default puse la instalarea oracle 11g (Din pacate nu am reusit 
+sa-mi dau mai mult timp si nu am reusit sa fac aceste detalii) . 
+
+- In clasa Database am facut managing-ul conexiunii cu baza de date . Cand nu exista o conexiune
+sau aceasta e inchisa , aceasta se creeaza si apoi este returnata. 
+
+-Clase ArtistController si AlbumController implementeaza fiecare cate doua metode , specifice 
+cautarii(crearii)  bazelor de date . Acestea doua lucreaza cu conexiunea instantiata in Database.
+
+- In Main am dat un scenariu standard ce demonstreaza functionalitatea claselor si metodelor 
+descrise in cadrul lor .
