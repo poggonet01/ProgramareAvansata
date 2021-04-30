@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lab2Recapitulare.iml" filepath="$PROJECT_DIR$/.idea/Lab2Recapitulare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.AdvancedSolution.se/com.AdvancedSolution.se.iml" filepath="$PROJECT_DIR$/com.AdvancedSolution.se/com.AdvancedSolution.se.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.Laborator2021.se/com.Laborator2021.se.iml" filepath="$PROJECT_DIR$/com.Laborator2021.se/com.Laborator2021.se.iml" />
+    </modules>
+  </component>
+</project>
